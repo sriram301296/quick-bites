@@ -1,0 +1,28 @@
+<h1>Goal</h1>
+Write a program that, given a Dictionary of words in English, finds the longest word such that all prefix-substrings are also valid words.
+
+<h1>Contract</h1>
+Input: Set<String> dictionary
+Output: String longestWord, suchThat for 0 <= n <= len(longestWord)-1, longestWord.substr(0,n) is a valid word in dictionary
+
+<h1>Examples</h1>
+<h2>Dictionary</h2>
+a
+bi
+cab
+i
+mobi
+nab
+obi
+zap
+<h2>Output</h2>
+mobi, since (mobi, obi, bi, i) are all valid words according to the dictionary
+
+<h1>Notes</h1>
+<ul>
+<li> Empty space is not a valid word
+<li> If there are more than 1 such words, print any
+<li> For reference dictionary file: https://github.com/dwyl/english-words/blob/master/words_alpha.txt
+<li> The output for the above dictionary file will be "suprising" (though it's not correct spelling, the dictionary file has it).
+</ul>
+
